@@ -38,6 +38,7 @@ routes.get('/projects/:title', ProjectController.index);
 routes.post('/type-activities', TypeActivityController.store);
 
 routes.post('/activities', ActivityController.store);
-routes.get('/activities', ActivityController.index);
+routes.get('/activities/projects', ActivityController.index);
+routes.get('/activities', ActivityController.showByDate);
 
 export default routes;
